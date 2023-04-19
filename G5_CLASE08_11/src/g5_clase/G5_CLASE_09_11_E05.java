@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package g2_;
+package g5_clase;
 
 /**
  *
  * @author sebas
  */
-public class G2_ {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class G5_CLASE_09_11_E05 {
     
 }

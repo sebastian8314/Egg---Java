@@ -3,23 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package egg;
+package g5_clase;
 
 /**
  *
  * @author sebas
  */
-public class Egg {
+public class G5_CLASE_09_11_E06 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-       system.out.println("Hola mundo")
-         
-                
-                
-                
+    public static void main(String[] args) throws InterruptedException {
+        // TODO code application logic here
     }
     
 }

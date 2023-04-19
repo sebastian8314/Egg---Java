@@ -15,7 +15,7 @@ public class G1_E02PEDIR_NOMBRE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+      
        Scanner leerm = new Scanner(System.in); 
         
        String nom, ape;
