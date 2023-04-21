@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author sebas
  */
-public class G5_CLASE_09_11_EJER_11 {
+public class G5_CLASE_09_11_EJER_13 {
 
     /**
      * @param args the command line arguments

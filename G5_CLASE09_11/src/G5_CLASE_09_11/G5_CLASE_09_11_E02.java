@@ -5,7 +5,7 @@ programa mostrará dónde se encuentra el numero y si se encuentra
 repetido
 
  */
-package g5_clase;
+package G5_CLASE_09_11;
 
 import java.util.Scanner;
 
