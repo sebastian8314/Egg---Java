@@ -4,7 +4,7 @@ equivalente en grados Fahrenheit. La fórmula correspondiente es:
 F = 32 + (9 * C / 5).
 
  */
-package g1_e04.conv_cent_farn;
+package G2_CLASE_02_03;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author sebas
  */
-public class G1_E04CONV_CENT_FARN {
+public class G2_E04_CONV_CENT_FARN {
 
     /**
      * @param args the command line arguments

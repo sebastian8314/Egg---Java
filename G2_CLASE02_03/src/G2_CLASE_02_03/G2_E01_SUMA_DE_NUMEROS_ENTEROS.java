@@ -2,7 +2,7 @@
 Escribir un programa que pida dos números enteros por teclado y calcule la suma de los dos. 
 El programa deberá después mostrar el resultado de la suma
  */
-package g1_e01.suma_de_numeros_enteros;
+package G2_CLASE_02_03;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author sebas
  */
-public class G1_E01SUMA_DE_NUMEROS_ENTEROS {
+public class G2_E01_SUMA_DE_NUMEROS_ENTEROS {
 
     /**
      * @param args the command line arguments
@@ -36,8 +36,9 @@ public class G1_E01SUMA_DE_NUMEROS_ENTEROS {
         num2 = scanner.nextInt();
 
         suma = num1 + num2;
-
-        System.out.println("El resultado de sumar " + num1 + "+" + num2 + " el valor es: " + suma);
+        
+        System.out.println("");
+        System.out.println("El resultado de sumar " + num1 + " + " + num2 + " el valor es: " + suma);
 
     }
 

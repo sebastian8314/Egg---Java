@@ -18,18 +18,19 @@ public class EjercicioValidarNota {
      */
     public static void main(String[] args) {
         /*Ejercicio 8
-        Escriba un programa que valide si una nota está entre 0 y 10, sino está entre 0 y 10 la nota se pedirá de nuevo
-        hasta que la nota sea correcta.*/
-       Scanner leer = new Scanner(System.in);
+        Escriba un programa que valide si una nota está entre 0 y 10, sino está
+        entre 0 y 10 la nota se pedirá de nuevo hasta que la nota sea correcta.*/
+        
+        Scanner leer = new Scanner(System.in);
         System.out.println("Escriba una nota");
         int nota = leer.nextInt();
-        while((nota < 0) || (nota > 10))
-        {
+        
+        while ((nota < 0) || (nota > 10)) {
             System.out.println("Nota invalida, vuelva a igresarla");
-         nota = leer.nextInt();
+            nota = leer.nextInt();
         }
-        System.out.println("La nota es: "+nota);
-            
+        System.out.println("La nota es: " + nota);
+
     }
     
 }

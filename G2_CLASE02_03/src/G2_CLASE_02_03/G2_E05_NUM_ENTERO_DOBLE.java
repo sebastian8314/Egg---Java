@@ -4,7 +4,7 @@ por pantalla el doble, el triple y la raíz cuadrada de ese número.
 Nota: investigar la función Math.sqrt().
 
  */
-package g1_e05.num_entero_doble;
+package G2_CLASE_02_03;
 
 import static java.lang.Math.abs;
 import static java.lang.Math.abs;
@@ -14,7 +14,7 @@ import java.util.Scanner;
  *
  * @author sebas
  */
-public class G1_E05NUM_ENTERO_DOBLE {
+public class G2_E05_NUM_ENTERO_DOBLE {
 
     /**
      * @param args the command line arguments
