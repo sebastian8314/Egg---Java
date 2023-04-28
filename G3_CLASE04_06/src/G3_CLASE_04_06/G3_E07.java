@@ -21,43 +21,44 @@ public class G3_E07 {
 
     public static void main(String[] args) {
         Scanner Scan = new Scanner(System.in);
-        
+
         String frase = "";
         String FDE = "&&&&&";
         int contadorcorrectas = 0;
         int contadorincorrectas = 0;
-        String primerLetra;
-        String ultimaLetra;
-        
-        do{
-            do{
-              System.out.println("Ingrese una frase de 5 caracteres");
-              frase = Scan.next();
-              
-            }while (frase.length() != 5);{
-            
-            
-            
-            primerLetra = frase.substring(0,1);
-            ultimaLetra = frase.substring(4,5);
-        }
-            
-            if (primerLetra.equals("X") && ultimaLetra.equals("O")){
-                //system.out.println("correcto");
-                contadorcorrectas++;
-               
-            }if (!frase.equals(FDE));{
-               //System.out.println("Incorrecto");
-               contadorincorrectas++;
-            
-        }
-        
-    } while (!frase.equals(FDE));{
-    System.out.println("");
-    
-  System.out.println("LECTURAS CORRECTAS:" + contadorcorrectas);
-System.out.println("LECTURAS INCORRECTAS:" + contadorincorrectas);
 
+        do {
+            do {
+                System.out.println("Ingrese una frase de 5 caracteres");
+                frase = Scan.next();
+
+            } while (frase.length() != 5);
+            {
+
+                String primerLetra = frase.substring(0, 1);
+                String ultimaLetra = frase.substring(4, 5);
+
+                if (primerLetra.equalsIgnoreCase("X") && ultimaLetra.equalsIgnoreCase("O"));
+                {
+                    //system.out.println("correcto");
+                    contadorcorrectas++;
+
+                }
+                if (!frase.equals(FDE));
+                {
+                    //System.out.println("Incorrecto");
+                    contadorincorrectas++;
+
+                }
+            }
+
+        } while (!frase.equals(FDE));
+        {
+            System.out.println("");
+
+            System.out.println("LECTURAS CORRECTAS:" + contadorcorrectas);
+            System.out.println("LECTURAS INCORRECTAS:" + contadorincorrectas);
+
+        }
+    }
 }
-    }}
-
