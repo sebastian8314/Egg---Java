@@ -12,7 +12,7 @@ public class G7_E01 {
         Libro l1 = new Libro();
         
         l1.llenarLibro();
-        l1.toString();
+        l1.mostrarLibro();
         
         
     }
