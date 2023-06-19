@@ -30,14 +30,16 @@ public class ParDeNumerosService {
     }
 
     public void mostrarValores(){
-        System.out.print(" Número N° 1 => " + par.getNum1());
-        System.out.print(" Número N° 2 => " + par.getNum2());
+        System.out.print(" Primer  N° es: " + par.getNum1());
+        System.out.print(" Segundo N° es: " + par.getNum2());
     }
 
     public double devolverMayor() {
         if (par.getNum1() > par.getNum2()) {
+            System.out.println("");
             return par.getNum1();
         } else {
+            System.out.println("");
             return par.getNum2();
         }
     }

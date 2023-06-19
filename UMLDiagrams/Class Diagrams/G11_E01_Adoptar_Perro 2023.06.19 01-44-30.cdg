@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G11_E01_Adoptar_Perro">
+  <ClassDiagramComponents>
+    <Class name="Perro" package="Entidad" visibility="public" xPosition="76.0" yPosition="78.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="tamanio" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="raza"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="String" name="tamanio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getRaza" returnType="String" visibility="public"/>
+        <Method name="setRaza" returnType="void" visibility="public">
+          <Argument type="String" name="raza"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getTamanio" returnType="String" visibility="public"/>
+        <Method name="setTamanio" returnType="void" visibility="public">
+          <Argument type="String" name="tamanio"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="Entidad" visibility="public" xPosition="528.0" yPosition="244.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="Integer" visibility="private"/>
+        <Field name="documento" type="Integer" visibility="private"/>
+        <Field name="perro" type="Perro" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="Integer" name="edad"/>
+          <Argument type="Integer" name="documento"/>
+          <Argument type="Perro" name="perro"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getEdad" returnType="Integer" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="Integer" name="edad"/>
+        </Method>
+        <Method name="getDocumento" returnType="Integer" visibility="public"/>
+        <Method name="setDocumento" returnType="void" visibility="public">
+          <Argument type="Integer" name="documento"/>
+        </Method>
+        <Method name="getPerro" returnType="Perro" visibility="public"/>
+        <Method name="setPerro" returnType="void" visibility="public">
+          <Argument type="Perro" name="perro"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="G11_E01_Adoptar_Perro" package="g11_e01_adoptar_perro" visibility="public" xPosition="587.0" yPosition="-46.0">
+      <Fields>
+        <Field name="scan" type="Scanner" visibility="private" isStatic="true"/>
+        <Field name="pps" type="PerroPersonaServicio" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PerroPersonaServicio" package="Servicio" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="scan" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="crearPersona" returnType="Persona" visibility="public"/>
+        <Method name="crearPerro" returnType="Perro" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="pps" source="g11_e01_adoptar_perro.G11_E01_Adoptar_Perro" target="Servicio.PerroPersonaServicio" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Entidad.Persona" target="Entidad.Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.PerroPersonaServicio" target="Entidad.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Servicio.PerroPersonaServicio" target="Entidad.Perro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="perro" source="Entidad.Persona" target="Entidad.Perro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
