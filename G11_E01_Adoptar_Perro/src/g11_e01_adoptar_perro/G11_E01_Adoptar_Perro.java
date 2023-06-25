@@ -29,20 +29,21 @@ public class G11_E01_Adoptar_Perro {
 
         System.out.println(" * Se procede a cargar dos personas en el sistema ");
         System.out.println("");
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             personas.add(pps.crearPersona());
 
         }
 
         System.out.println(" * Se procede a cargar dos perros en el Sistema ");
         System.out.println("");
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             perrosadoptables.add(pps.crearPerro());
         }
 
         System.out.println("");
         for (Persona aux : personas) {
-            System.out.println(" Para la persona " + aux.getNombre() + "" + aux.getApellido() + "\nSelecciones uno de los siguientes perros en adopción => ");
+            System.out.println(" ========================================================");
+            System.out.println(" Para la persona => " + aux.getNombre() + " " + aux.getApellido() + "\n Selecciones uno de los siguientes Perros para adopción => ");
 
             for (Perro aux2 : perrosadoptables) {
                 System.out.println(" Nombre " + aux2.getNombre() + "- Raza " + aux2.getRaza());
@@ -60,17 +61,18 @@ public class G11_E01_Adoptar_Perro {
 
             }
             if (contador == 0) {
-                System.out.println("No se ha adoptado un perro válido");
+                System.out.println(" No se ha adoptado un perro válido");
             }
         }
-        
+
+        System.out.println(" \n ========================================================");
+        System.out.println(" Las siguientes personas han adoptado: ");
         System.out.println("");
-        System.out.println("Las siguientes personas han adoptado: ");
         for (Persona aux : personas) {
             if (aux.getPerro() == null) {
-                System.out.println(aux.getNombre() + " " + aux.getApellido() + " no ha adoptado a ningun perro");
+                System.out.println(" " + aux.getNombre() + " " + aux.getApellido() + " no ha adoptado a ningun perro");
             } else {
-                System.out.println(aux.getNombre() + " " + aux.getApellido() + " a adoptado a " + aux.getPerro().getNombre() + " de raza " + aux.getPerro().getRaza());
+                System.out.println(" " + aux.getNombre() + " " + aux.getApellido() + " a adoptado a " + aux.getPerro().getNombre() + " de raza " + aux.getPerro().getRaza());
             }
         }
 

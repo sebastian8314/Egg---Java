@@ -24,9 +24,9 @@ public class PerroPersonaServicio {
         System.out.println(" ========== ( Ingrese datos de la Persona ) ==================== ");
         System.out.println("");
         System.out.print(" Nombre   => ");
-        a.setNombre(scan.next());
+        a.setNombre(scan.next().toUpperCase());
         System.out.print(" Apellido => ");
-        a.setApellido(scan.next());  
+        a.setApellido(scan.next().toUpperCase());  
         System.out.print(" D.N.I N° => ");
         a.setDocumento(scan.nextInt());
         System.out.print(" Edad     => ");
@@ -42,13 +42,13 @@ public class PerroPersonaServicio {
         System.out.println(" ========== (  Ingrese  datos  del Perro  ) ==================== ");
         System.out.println("");
         System.out.print(" Nombre   => ");
-        b.setNombre(scan.next());
+        b.setNombre(scan.next().toUpperCase());
         System.out.print(" Raza     => ");
-        b.setRaza(scan.next());
+        b.setRaza(scan.next().toUpperCase());
         System.out.print(" Edad     => ");
         b.setEdad(scan.nextInt());
         System.out.print(" Tamaño   => ");
-        b.setTamanio(scan.next());
+        b.setTamanio(scan.next().toUpperCase());
         System.out.println("");
         
         return b;
