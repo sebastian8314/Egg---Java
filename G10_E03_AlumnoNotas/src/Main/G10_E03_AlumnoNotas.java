@@ -16,23 +16,20 @@ package Main;
 import Entidad.Alumno;
 import Servicio.AlumnoServicio;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class G10_E03_AlumnoNotas {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
 
         AlumnoServicio as = new AlumnoServicio();
-        ArrayList<Alumno> alumnos = as.crearaListaAlumnos();
+        ArrayList<Alumno> alumnos = as.crearListaAlumnos();
 
-        
-        System.out.println(alumnos);
         for (Alumno alumno : alumnos) {
             System.out.println(alumno.toString());
 
         }
-
+        System.out.println(" El promedio del alumno es : " + as.buscarAlumno(alumnos));
+        System.out.println("");
     }
 
 }
